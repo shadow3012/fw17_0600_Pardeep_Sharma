@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #student {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+            background-color: blueviolet;
+        }
+        #student>div{
+            width: 100%;
+            padding: 10px;
+        }
+
+        #student>input {
+            width: 300px;
+            margin: auto;
+        }
+
+        select {
+            width: 170px;
+        }
+        #navbar{
+            width: 100%;
+            height: 40px;
+            background-color: cadetblue;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+            /* line-height: 0; */
+        }
+        #navbar>h1{
+            height: 100%;
+            width: 20%;
+            line-height: 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <h1 id="batch1"></h1>
+        <h1><a href="dashboard.html">Dashbaord</a></h1>
+        <h1 id="batch2"></h1>
+
+    </div>
+    <form action="submit" id="student">
+
+        <div><label for="Name">Name :</label>
+            <input type="text" id="name" placeholder="Enter student Name" required>
+        </div>
+        <div>
+            <label for="">Unit : </label>
+            <select name="Unit" id="unit">
+                <option value="unit1">Unit 1</option>
+                <option value="unit2">Unit 2</option>
+                <option value="unit3">Unit 3</option>
+                <option value="unit4">Unit 4</option>
+                <option value="unit5">Unit 5</option>
+                <option value="unit6">Unit 6</option>
+            </select>
+        </div>
+        <div>
+            <label for="batch">
+                Batch
+            </label>
+            <select name="batch" id="batch">
+                <option value="batch1">Batch1</option>
+                <option value="batch2">Batch2</option>
+            </select>
+        </div>
+        <div><label for="course">
+                Course : </label>
+            <input type="text" placeholder="course" id="course">
+        </div>
+        <div>
+            <label for="Image">Image :</label><input type="url" name="image" id="image" placeholder="Image Url" required></div>
+        <div><input type="submit"></div>
+
+    </form>
+</body>
+
+</html>
+<script src="index.js"></script>
